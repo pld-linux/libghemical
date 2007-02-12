@@ -1,5 +1,5 @@
 Summary:	The MM and QM calculations library
-Summary(pl.UTF-8):   Biblioteka do obliczeń z zakresu mechaniki molekularnej i kwantowej
+Summary(pl.UTF-8):	Biblioteka do obliczeń z zakresu mechaniki molekularnej i kwantowej
 Name:		libghemical
 Version:	2.10
 Release:	1
@@ -21,7 +21,7 @@ Biblioteka do obliczeń z zakresu mechaniki molekularnej i kwantowej.
 
 %package devel
 Summary:	Header files for libghemical library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libghemical
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libghemical
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -36,7 +36,7 @@ Pliki nagłówkowe biblioteki libghemical.
 
 %package static
 Summary:	Static libghemical library
-Summary(pl.UTF-8):   Statyczna biblioteka libghemical
+Summary(pl.UTF-8):	Statyczna biblioteka libghemical
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
