@@ -1,5 +1,5 @@
 Summary:	The MM and QM calculations library
-Summary(pl):	Biblioteka do obliczeÒ z zakresu mechaniki molekularnej i kwantowej
+Summary(pl.UTF-8):   Biblioteka do oblicze≈Ñ z zakresu mechaniki molekularnej i kwantowej
 Name:		libghemical
 Version:	2.10
 Release:	1
@@ -16,12 +16,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The MM and QM calculations library.
 
-%description -l pl
-Biblioteka do obliczeÒ z zakresu mechaniki molekularnej i kwantowej.
+%description -l pl.UTF-8
+Biblioteka do oblicze≈Ñ z zakresu mechaniki molekularnej i kwantowej.
 
 %package devel
 Summary:	Header files for libghemical library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki libghemical
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki libghemical
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -31,19 +31,19 @@ Requires:	mpqc-devel >= 1.10
 %description devel
 Header files for libghemical library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki libghemical.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki libghemical.
 
 %package static
 Summary:	Static libghemical library
-Summary(pl):	Statyczna biblioteka libghemical
+Summary(pl.UTF-8):   Statyczna biblioteka libghemical
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libghemical library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libghemical.
 
 %prep
