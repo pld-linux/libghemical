@@ -1,13 +1,13 @@
 Summary:	The MM and QM calculations library
 Summary(pl.UTF-8):	Biblioteka do obliczeń z zakresu mechaniki molekularnej i kwantowej
 Name:		libghemical
-Version:	2.10
+Version:	2.96
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://www.uku.fi/~thassine/projects/download/%{name}-%{version}.tar.gz
-# Source0-md5:	a248fc3aebf26582367326716f208594
-URL:		http://www.uku.fi/~thassine/projects/libghemical/
+Source0:	http://bioinformatics.org/ghemical/download/current/%{name}-%{version}.tar.gz
+# Source0-md5:	3b877fe22123d9df1f8f08899b9fe472
+URL:		http://bioinformatics.org/ghemical/ghemical/index.html
 BuildRequires:	libstdc++-devel
 BuildRequires:	mopac7-devel >= 1.2.5
 BuildRequires:	mpqc-devel >= 1.10
