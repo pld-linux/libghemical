@@ -8,7 +8,10 @@ Group:		Libraries
 Source0:	http://bioinformatics.org/ghemical/download/current/%{name}-%{version}.tar.gz
 # Source0-md5:	d2dae2d7d786d3cba335cb29d85033ea
 URL:		http://bioinformatics.org/ghemical/ghemical/index.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
 BuildRequires:	mopac7-devel >= 1.2.5
 BuildRequires:	mpqc-devel >= 1.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -51,6 +54,12 @@ Statyczna biblioteka libghemical.
 %{__sed} -i -e 's/#include "typedef.h"/#include "typedef.h"\n#include <stdlib.h>\n#include <algorithm>/g' src/sasaeval.h
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
+
 %configure \
 	--enable-mopac7 \
 	--enable-mpqc
@@ -75,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog TODO
 %attr(755,root,root) %{_libdir}/libghemical.so.*.*.*
 %{_datadir}/libghemical
-%ghost %{_libdir}/libghemical.so.5
+%attr(755,root,root) %ghost %{_libdir}/libghemical.so.5
 
 %files devel
 %defattr(644,root,root,755)
