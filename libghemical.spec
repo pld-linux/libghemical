@@ -8,12 +8,16 @@ Group:		Libraries
 Source0:	http://bioinformatics.org/ghemical/download/current/%{name}-%{version}.tar.gz
 # Source0-md5:	d2dae2d7d786d3cba335cb29d85033ea
 URL:		http://bioinformatics.org/ghemical/ghemical/index.html
+BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
+BuildRequires:	intltool
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	mopac7-devel >= 1.2.5
 BuildRequires:	mpqc-devel >= 1.10
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
