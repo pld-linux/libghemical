@@ -9,14 +9,15 @@ Source0:	http://bioinformatics.org/ghemical/download/current/%{name}-%{version}.
 # Source0-md5:	d2dae2d7d786d3cba335cb29d85033ea
 URL:		http://bioinformatics.org/ghemical/ghemical/index.html
 BuildRequires:	OpenGL-devel
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	intltool
+BuildRequires:	intltool >= 0.40.0
+BuildRequires:	lapack-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	libtool
-BuildRequires:	mopac7-devel >= 1.2.5
-BuildRequires:	mpqc-devel >= 1.10
+BuildRequires:	libtool >= 2:1.5
+BuildRequires:	mopac7-devel >= 1.13
+BuildRequires:	mpqc-devel >= 1.2.5
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,8 +33,8 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libghemical
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
-Requires:	mopac7-devel >= 1.2.5
-Requires:	mpqc-devel >= 1.10
+Requires:	mopac7-devel >= 1.13
+Requires:	mpqc-devel >= 1.2.5
 
 %description devel
 Header files for libghemical library.
@@ -55,7 +56,6 @@ Statyczna biblioteka libghemical.
 
 %prep
 %setup -q
-%{__sed} -i -e 's/#include "typedef.h"/#include "typedef.h"\n#include <stdlib.h>\n#include <algorithm>/g' src/sasaeval.h
 
 %build
 %{__libtoolize}
