@@ -1,12 +1,12 @@
 Summary:	The MM and QM calculations library
 Summary(pl.UTF-8):	Biblioteka do obliczeń z zakresu mechaniki molekularnej i kwantowej
 Name:		libghemical
-Version:	2.99.1
+Version:	3.0.0
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Libraries
 Source0:	http://bioinformatics.org/ghemical/download/current/%{name}-%{version}.tar.gz
-# Source0-md5:	d2dae2d7d786d3cba335cb29d85033ea
+# Source0-md5:	1d5c9c19bb119470d2bb41a7e681eafd
 URL:		http://bioinformatics.org/ghemical/ghemical/index.html
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf >= 2.50
@@ -88,8 +88,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog TODO
 %attr(755,root,root) %{_libdir}/libghemical.so.*.*.*
-%{_datadir}/libghemical
 %attr(755,root,root) %ghost %{_libdir}/libghemical.so.5
+%{_datadir}/libghemical
 
 %files devel
 %defattr(644,root,root,755)
