@@ -11,7 +11,7 @@ URL:		http://bioinformatics.org/ghemical/ghemical/index.html
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	lapack-devel
