@@ -2,7 +2,7 @@ Summary:	The MM and QM calculations library
 Summary(pl.UTF-8):	Biblioteka do obliczeń z zakresu mechaniki molekularnej i kwantowej
 Name:		libghemical
 Version:	3.0.0
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://bioinformatics.org/ghemical/download/current/%{name}-%{version}.tar.gz
